@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Form in html </title>
+<link rel="stylesheet" href="./Form in html_files/style.css"></head>
+<body>
+    
+    <div class="main">
+
+        <h1>Conference Online Registration</h1>
+        <p>Please Fill in the form below. We'll Contact you as Soon as Possible.</p>
+
+    <br>
+        <hr>
+        <br>
+        <form action="http://127.0.0.1:5500/form1">
+            <div class="margin">
+            <h3>Full Name </h3>
+            <br>
+
+            
+            <input type="text" class="name" placeholder="First Name ">
+            
+            <input type="text" class="name" placeholder="Last Name ">
+<br>
+<br>
+<br>
+            <h3>Area</h3>
+            <select name="city" class="choose">
+
+                <option value="Bhubaneshwar">Bhubaneshwar</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Manipur">Manipur</option>
+
+
+
+                </select>
+                <br>
+            <br>
+        <br>
+                <h3>Address</h3>
+
+                <input type="text" class="street" placeholder="Street Address">
+
+                <br>
+                <br>
+                <br>
+                <input type="text" class="street" placeholder="Street Address Line-2">
+
+
+                <input type="city" class="city1" placeholder="Enter City ">
+                <input type="city" class="city1" placeholder="State / Province  ">
+
+
+                <input type="text" class="city1" placeholder="Postal / Zip Code ">
+
+
+                <select name="city" class="choose">
+
+                    <option value="Bhubaneshwar">India</option>
+                    <option value="Delhi">Japan</option>
+                    <option value="Hyderabad">America</option>
+                    <option value="West Bengal">China</option>
+                    <option value="Assam">Germany</option>
+                    <option value="Bihar">North-Korea</option>
+                    <option value="Manipur">France</option>
+    
+    
+    
+                    </select>
+<br>
+<br>
+<br>
+
+                    <h3>E-mail </h3>
+
+                    <input type="e-mail" placeholder="enter your e-mail id " class="email">
+
+    <br>
+    <br>
+    <br>
+            <h3>Phone Number</h3>
+             <input type="number" placeholder="enter phone number " class="phone">
+<br>
+<br>
+<br>
+                    <h3>First time to attend this Conference ?</h3>
+                    <br>
+                
+                    <label for="102">
+                        <input type="radio" name="class" value="Yes" class="tick"> Yes
+                            </label>
+                <br>
+                    <br>
+                            <label for="103">
+                                <input type="radio" name="class" value="No" class="tick"> No
+                                    </label>
+
+            <br>
+                <br>
+            <br>
+                                    <h3>I Will attend : </h3>
+                                    <br>
+                                    <label for="Math">
+                                        <input type="checkbox" name="subject" value="math" class="check"> Event 1- Date of Event 1
+                                    </label>
+                        <br>
+                        <br>
+                                    <label for="Science">
+                                        <input type="checkbox" name="subject" value="Science" class="check"> Event 2- Date of Event 2
+                                    </label>
+                        <br>
+                        <br>
+                                    <label for="Biology">
+                                        <input type="checkbox" name="subject" value="Biology" class="check"> Event 3- Date of Event 3
+                                    </label>
+                        <br>
+                        <br>
+
+
+</div>
+
+
+
+        </form>
+
+
+
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
